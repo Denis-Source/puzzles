@@ -17,7 +17,8 @@ TEST_CASES = [
     (231,   2,  True),
     (471,   2,  True),
     (407,   2,  False),
-    (1,     2,  True)
+    (1,     2,  True),
+    (2049,  2,  True)
 ]
 
 
