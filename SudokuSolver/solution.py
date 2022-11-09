@@ -6,7 +6,7 @@ from typing import List, Tuple
 
 class Board:
     """
-    Represent Sudoku board.
+    Represent SudokuSolver board.
 
     Attributes:
         matrix: two-dimensional list of values including blanks
@@ -92,7 +92,7 @@ class Board:
         """
 
         # Initialize a new instance without precomputed blank list.
-        new_board = cls(init_board.matrix, initialization=False)
+        new_board = cls(init_board.matrix, precompute_blanks=False)
         # Copy blank list from the initial board.
         new_board.blanks = [*init_board.blanks]
 
@@ -110,7 +110,7 @@ class Board:
 
 class Solution:
     """
-    Solves a Sudoku puzzle by filling the empty cells.
+    Solves a SudokuSolver puzzle by filling the empty cells.
     """
 
     @staticmethod

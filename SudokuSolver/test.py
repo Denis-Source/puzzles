@@ -1,6 +1,6 @@
 import pytest
 
-from Sudoku.solution import Solution, Board
+from SudokuSolver.solution import Solution, Board
 
 TEST_CASES = [
     # Easy
