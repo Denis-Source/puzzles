@@ -1,5 +1,5 @@
 # Puzzles
-Repo consisting of various code problems and its solutions.
+Repo consisting of various coding problems with solutions.
 
 ***
 ## Table of contents
