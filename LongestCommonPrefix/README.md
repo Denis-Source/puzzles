@@ -30,5 +30,4 @@ Explanation: There is no common prefix among the input strings.
 ***
 
 ## Solution
-
 [solution](solution.py)

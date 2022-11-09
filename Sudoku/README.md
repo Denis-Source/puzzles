@@ -1,3 +1,5 @@
+# Sudoku Solver
+## Setup
 Write a program to solve a Sudoku puzzle by filling the empty cells.
 
 A sudoku solution must satisfy all the following rules:

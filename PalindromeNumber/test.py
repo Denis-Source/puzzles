@@ -25,3 +25,9 @@ TEST_CASES = [
 @pytest.mark.parametrize("x, notation, expected_result", TEST_CASES)
 def test_solution(x, notation, expected_result):
     assert Solution.is_palindrome(x, notation) == expected_result
+
+
+@pytest.mark.parametrize("x, notation, expected_result", TEST_CASES)
+def test_solution(x, notation, expected_result):
+    if notation == 10:
+        assert Solution.is_palindrome_s(x) == expected_result

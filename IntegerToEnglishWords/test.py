@@ -1,6 +1,6 @@
 import pytest
 
-from IntegertoEnglishWords.solution import Solution
+from IntegerToEnglishWords.solution import Solution
 
 TEST_CASES = [
     (0,             "Zero"),

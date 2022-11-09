@@ -1,11 +1,13 @@
 class Solution:
     """
-    The solution is based on using a hash map (python dictionary)
-    to store roman number and it's corresponding value
+    Convert roman numeral to its integer representation
     """
 
+    # The solution is based on using a hash map (python dictionary)
+    # to store roman number, and it's corresponding value.
+
     # Besides storing values incrementally
-    # We also should have subtracted values separately
+    # The subtracted values (IV, IX etc.) should be stored as well.
     VALUES = {
         "CM": 900,
         "M": 1000,
@@ -25,25 +27,25 @@ class Solution:
     @staticmethod
     def roman_to_int(s: str, n: int = 0) -> int:
         """
-        Solution
+        Convert roman numeral to its integer representation.
 
         :param s: roman numeral string
         :param n: current sum of values (needed for the method to be recursive)
-        :return: integer value of the provided roman numeral string
+        :return: integer value of the provided roman numeral string.
         """
 
-        # We only check string if it's not empty
+        # Only check string if it's not empty.
         if s:
-            # Than we iterate over the keys that are stored in the hash map
+            # Iterate over the keys that are stored in the hash map.
             for value in Solution.VALUES.keys():
-                # if the value is present at the beginning of the string
+                # If the value is present at the beginning of the string
+                # we increment the converted number.
                 if s.startswith(value):
-                    # We increment the converted number
                     n += Solution.VALUES[value]
                     # And call the method itself recursively
-                    # supplying the string without the matched number
+                    # supplying the string without the matched number.
                     return Solution.roman_to_int(s[len(value):], n)
-        # if the string is empty we are done
+        # If the string is empty we are done,
         # so we return the sum of the values
         else:
             return n
