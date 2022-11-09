@@ -8,7 +8,7 @@ represent. Return the answer in any order.
 A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any
 letters.
 
-![keys](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Telephone-keypad2.svg/1200px-Telephone-keypad2.svg.png)
+![keys](https://i.ibb.co/KNfLHXc/keypad.png)
 
 ### Constraints
 
